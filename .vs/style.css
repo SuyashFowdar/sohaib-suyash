@@ -1,19 +1,61 @@
-nav{
-position: fixed;
-width: 100%;
-display: flex;
-
-
-
-
-}
-nav a{
-    flex: 1 1;
-}
-@media screen and (max-width: 600px)
-{
-    body{
-        background-color: aquamarine;
-    }
+nav {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	background-color: rgb(255, 240, 240);
+	top: 0;
 }
 
+nav a {
+	flex: 1 1;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form input {
+	margin: 10px;
+}
+
+section#features {
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+section#features strong {
+	margin: 10px 0;
+	font-size: 25px;
+}
+
+section#howitworks,
+section#pricing {
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+
+section#pricing {
+	padding: 100px;
+	font-size: 30px;
+}
+
+img {
+	margin-top: 40px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	section {
+		background-color: aquamarine;
+	}
+}
